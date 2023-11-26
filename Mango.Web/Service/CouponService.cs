@@ -22,7 +22,7 @@ namespace Mango.Web.Service
             });
         }
 
-        public async Task<ResponseDto?> DeleteCouponAsync(Guid id)
+        public async Task<ResponseDto?> DeleteCouponAsync(Guid? id)
         {
             return await _service.SendAsync(new RequestDTO()
             {

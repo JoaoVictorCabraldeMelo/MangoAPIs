@@ -122,7 +122,7 @@ namespace Mango.Services.CouponAPI.Controllers
         }
 
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public ResponseDto Delete(Guid id)
         {
             try
